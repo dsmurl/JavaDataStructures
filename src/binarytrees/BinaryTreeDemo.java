@@ -33,5 +33,8 @@ public class BinaryTreeDemo {
         
         binaryTree.findNodeForValue(0);
         binaryTree.findNodeForValue(5);
+        
+        binaryTree.deleteNode(40);
+        binaryTree.inOrderTreeTraversal();                
     }    
 }
