@@ -9,7 +9,7 @@ package binarytrees;
  *
  * @author dsmurl
  */
-public class BinaryTrees {
+public class BinaryTreeDemo {
 
     /**
      * @param args the command line arguments

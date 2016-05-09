@@ -9,7 +9,7 @@ package hashtables;
  *
  * @author dsmurl
  */
-public class HashTables {
+public class HashTableDemo {
 
     /**
      * @param args the command line arguments
