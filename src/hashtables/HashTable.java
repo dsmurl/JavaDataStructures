@@ -21,7 +21,7 @@ public class HashTable {
     
         this.arraySize = size;
         this.theArray = new String[this.arraySize];
-        Arrays.fill(this.theArray, "-1");
+        Arrays.fill(this.theArray, null);
     }
     
     public void hashFunction1(String[] stringsForArray) {
@@ -38,7 +38,7 @@ public class HashTable {
             
             System.out.println("HF2(" + newElementVal + ") = " + index);
             
-            while ("-1" != this.theArray[index]) {
+            while (null != this.theArray[index]) {
                 ++index;
                 index %= arraySize;
                 
@@ -52,7 +52,7 @@ public class HashTable {
     public int findIndexOfValue2(String value) {
         int index = Integer.parseInt(value) % (this.arraySize - 1);
         
-        while (this.theArray[index] != "-1") {
+        while (this.theArray[index] != null) {
             if (this.theArray[index] == value) {
                 System.out.println("HF(" + index +") = " + value);
                 return index;
@@ -93,7 +93,7 @@ public class HashTable {
             System.out.println();
 
             for (int n = increment - 10; n < increment; n++) {
-                if (theArray[n].equals("-1"))
+                if (theArray[n] == null)
                     System.out.print("|      ");
                 else
                     System.out.print(String.format("| %3s " + " ", theArray[n]));
